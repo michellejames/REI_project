@@ -1,0 +1,48 @@
+@import "reset";
+@import "diamond";
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	background: green;
+}
+
+.header__bkg {
+	position: absolute;
+	background-image: url(../../assets/img/bkg.jpg);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+}
+
+.subnav__nav {
+	display: flex;
+}
+
+.navbar {
+	display: flex;
+}
+
+.nabvar__main__nav,
+.navbar__search,
+.nabar__chart {
+	display: flex;
+	align-items: center;
+}
+
+.rei__logo {
+	background-image: url(../../assets/img/rei-logo.png);
+	background-repeat: no-repeat;
+	width: 100vh;
+	height: 40vh;
+}
+
+.test {
+	width: 200px;
+	height: 200px;
+	background: red;
+}
