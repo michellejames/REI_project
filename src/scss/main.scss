@@ -1,6 +1,26 @@
 @import "reset";
 @import "diamond";
 
+
+
+@font-face {
+	font-family: "ziden";
+	src: url("../../assets/fonts/AkzidenzGroteskBE-MdCn.otf"),
+}
+
+@font-face {
+	font-family: "GearedSlab";
+	src: url("../../assets/fonts/GearedSlab.ttf"),
+}
+
+
+
+
+
+
+
+
+
 * {
 	box-sizing: border-box;
 }
@@ -56,16 +76,35 @@ html, body {
 	height: 0;
 	position: relative;
 	margin-left: 10%;
+	padding-top: 59%;
 
 }
 
 .square {
+	color: #ffffff;
+	font-family: ziden;
+	text-transform: uppercase;
 	position: absolute;
 	width: 31.25%;
 	height: 0;
 	padding-bottom: 31.25%;
-	background: blue;
-	border: 5px solid lightblue;
+	background: rgba(116, 116, 117, 0.6);
+	border: 5px solid #ecebed;
+
+	& h3{
+
+		&.shop {
+		font-size: 34px;
+		transform: rotate(-45deg) translateY(100%);
+		}
+	}
+
+	& h2 {
+		font-size: 44px;
+		transform: rotate(-45deg) translateY(100%);
+	}
+
+
 	
 	$distance: 106%;
 
@@ -91,6 +130,17 @@ html, body {
 ///////////////         END OF SQUARE SECTION 			////////////////////////////////////////
 
 
+
+.members__part1 {
+	color: #c72026;
+	font-family: GearedSlab;
+}
+
+.members__part2 h2 {
+		color: #c72026;
+		font-size: 50px;
+		font-family: GearedSlab;
+	}
 
 
 
