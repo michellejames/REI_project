@@ -17,6 +17,11 @@ $break-small: 740px;
 }
 
 @font-face {
+	font-family: "ziden";
+	src: url("../../assets/fonts/AkzidenzGroteskBE-MdCn.otf"),
+}
+
+@font-face {
 	font-family: "ziden-x";
 	src: url("../../assets/fonts/AkzidenzGroteskBE-XBdCn.otf"),
 }
@@ -30,6 +35,11 @@ $break-small: 740px;
 	font-family: "ziden-cn";
 	src: url("../../assets/fonts/AkzidenzGroteskBE-Cn.otf"),
 
+}
+
+@font-face {
+	font-family: "ziden-light";
+	src: url("../../assets/fonts/AkzidenzGroteskBE-LightCn.otf"),
 }
 
 @font-face {
@@ -97,13 +107,22 @@ header{
 
 .maintravel__text {
 	color: white;
+
 	
 
 	.travel__big {
 		display: flex;
+		padding-bottom: 4%;
 
 		h1 {
-			text-transform: uppercase
+			text-transform: uppercase;
+			font-size: 55px;
+			font-family: GearedSlab;
+		}
+
+		h2 {
+			font-size: 30px;
+			font-family: ziden-light;
 		}
 
 		@media screen and (max-width:  $break-small) {
@@ -126,10 +145,12 @@ header{
 		h4 {
 			text-transform: uppercase;
 			font-family: ziden-cn;
+			font-size: 25px;
+			margin-left: 4%;
 		}
 
 		p {
-			font-size: 11px;
+			font-size: 17px;
 			font-family: ziden-reg;
 		}
 
@@ -165,7 +186,7 @@ header{
 
 		@media screen and (max-width:  $break-small) {
 			   margin-bottom: 5px;
-			   font-size: 20px;
+			   font-size: 34px;
 			   padding: 2px;
 		}
 	}
@@ -174,6 +195,20 @@ header{
 			   
 		}
 
+}
+
+.mobile-award {
+	display: none;
+	@media screen and (max-width:  $break-small) {
+			  display: inline-block;
+			  color: black;
+			  width: 100%;
+			  text-align: center;
+			  font-size: 24px;
+		      font-family: ziden-reg;
+		      font-weight: bold;
+		      padding-top: 1%;
+		}
 }
 
 
@@ -202,7 +237,6 @@ header{
 		    font-family: ziden-cn;
 		    margin-bottom: 5px;
 		    @media screen and (max-width:  $break-small) {
-			   color: black;
 			   display: none;
 			} 
 		}
@@ -245,17 +279,20 @@ header{
 
 
 .ankled__box1 {
-	width: 58%;
+	width: 1011px;
 	float: left;
-	height: 40vh;
+	
 	// clip-path: polygon(0 0, 61% 0, 36% 100%, 0% 100%);
 	background-image: url(/assets/img/Layer11.png);
   	background-size: contain;
+
   	background-repeat: no-repeat;
 
   		@media screen and (max-width:  $break-small) {
+  			height: 245px;
   			background-image: url(/assets/img/hut.png);
   			background-size: cover;
+  			margin-bottom: 2%;
 		} 
 
   	.ankled_box1__text {
@@ -266,11 +303,18 @@ header{
 
   		h2 {
   			background-color: white;
-  			height: 55px;
-  			font-size:30px;
-  			width: 94%;
-  			text-align: right;
-			clip-path: polygon(36% 0, 100% 0, 100% 100%, 26% 100%);
+		    height: 55px;
+		    margin-right: 26%;
+		    font-size: 30px;
+		    width: 70%;
+		    text-align: center;
+		    clip-path: polygon(12% 0, 100% 0%, 92% 100%, 0% 97%);
+
+			
+			@media screen and (max-width:  $break-small) {
+	  			clip-path: polygon(36% 0, 100% 0, 100% 100%, 26% 100%);
+	  			margin-right: 0;
+			} 
   		}
 
   		
@@ -279,6 +323,7 @@ header{
   	.desktop__sec{
   		display: flex;
   		color: white;
+  		margin-right: 30%;
 
   		a {
   			color: white;
@@ -287,6 +332,7 @@ header{
 
   		@media screen and (max-width:  $break-small) {
   			flex-direction: column;
+  			margin-right: 10%;
 		} 
 
   	}
@@ -302,18 +348,22 @@ header{
 
 
 .ankled__box2 {
-	width: 58%;
-	margin-left: -20%;
-	height: 245px;
+	width: 1011px;
+	margin-left: -27%;
+	
 	background-image: url(/assets/img/Layer12.png);
 	// clip-path: polygon(53% 0, 100% 0, 100% 100%, 27% 100%);
-	background-position: center;
+	
 	background-repeat: no-repeat;
   	background-size: contain;
   	@media screen and (max-width:  $break-small) {
+  			   margin-bottom: 1%;
 			   width: 100%;
+			   height: 245px;
+			   margin-left: 0;
 			   // clip-path: none;
 			   background-size: cover;
+			   background-position: center;
 			   background-image:url(/assets/img/elephant.png);
 	}
 
@@ -329,28 +379,41 @@ header{
 
 	.ankled_box2__text {
   		display: flex;
-  		flex-direction: column;
-  		align-items: flex-start;
-  		padding-top: 4%;
+	    width: 126%;
+	    flex-direction: column;
+	    align-items: flex-start;
+	    padding-top: 4%;
 
   		h2 {
-  			background-color: white;
-  			height: 51px;
-  			font-size:30px;
-  			width: 94%;
-  			text-align: left;
-  			clip-path: polygon(0 0, 72% 0, 64% 100%, 0 99%);
+  			    background-color: white;
+			    height: 51px;
+			    font-size: 30px;
+			    width: 64%;
+			    margin-left: 4%;
+			    padding-left: 18%;
+			    // margin-top: 20%;
+			    text-align: left;
+			    -webkit-clip-path: polygon(16% 0, 100% 0%, 92% 100%, 0% 100%);
+    			clip-path: polygon(12% 0, 100% 0%, 92% 100%, 0% 97%);
+
+  			@media screen and (max-width:  $break-small) {
+  				clip-path: polygon(0 0, 72% 0, 64% 100%, 0 99%);
+  				margin-left: 0;
+			} 
 			
   		}
 
-  		@media screen and (max-width:  $break-small) {
-  			
-		} 
+  		
   	}
 
   	.desktop__sec2{
-  		display: flex;
-  		color: white;
+  		    text-align: right;
+		    display: -ms-flexbox;
+		    display: flex;
+		    MARGIN-LEFT: 20%;
+		    padding-bottom: 2%;
+		    color: white;
+		    margin-top: 20%;
 
   		a {
   			color: white;
@@ -359,6 +422,7 @@ header{
 
   		@media screen and (max-width:  $break-small) {
   			flex-direction: column;
+  			margin-top: 17%;
 		} 
 
   	}
