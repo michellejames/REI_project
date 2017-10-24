@@ -71,9 +71,10 @@ header{
 
 .shadow {
 		width: 95%;
-		height: 20%;
+		height: 10%;
 	img {
 		width: 100%;
+		height: 550px;
 		margin-top: -2%;
 		@media screen and (max-width:  $break-small) {
 			display: none;
@@ -152,9 +153,11 @@ header{
 	.maintravel__subtext {
 		text-align: center;
 		display: flex;
+		flex-direction: column;
 
 		@media screen and (max-width:  $break-small) {
 			   display: flex;
+			   flex-direction: row;
 			   text-align: center;
 			   justify-content: space-around;
 		}
@@ -198,13 +201,16 @@ header{
 	& li {
 		background-color: white;
 		color: black;
-		text-align: center;
+		text-align: left;
+		width: 197px;
 		
 
 		@media screen and (max-width:  $break-small) {
 			   margin-bottom: 5px;
-			   font-size: 34px;
+			   font-size: 27px;
 			   padding: 2px;
+			   text-align: center;
+			   width: 100%;
 		}
 	}
 
@@ -253,6 +259,7 @@ header{
 			font-size: 24px;
 		    font-family: ziden-cn;
 		    margin-bottom: 5px;
+		    font-weight: bold;
 		    @media screen and (max-width:  $break-small) {
 			   display: none;
 			} 
@@ -324,6 +331,8 @@ header{
 		    margin-right: 26%;
 		    font-size: 30px;
 		    width: 70%;
+		    font-family: ziden-bold;
+		    text-transform: uppercase;
 		    text-align: center;
 		    clip-path: polygon(12% 0, 100% 0%, 92% 100%, 0% 97%);
 
@@ -340,6 +349,7 @@ header{
   	.desktop__sec{
   		display: flex;
   		color: white;
+  		font-family: ziden-bold;
   		margin-right: 30%;
 
   		a {
@@ -404,6 +414,8 @@ header{
   		h2 {
   			    background-color: white;
 			    height: 51px;
+			    font-family: ziden-bold;
+		    	text-transform: uppercase;
 			    font-size: 30px;
 			    width: 64%;
 			    margin-left: 4%;
@@ -424,6 +436,7 @@ header{
   	}
 
   	.desktop__sec2{
+  			font-family: ziden-bold;
   		    text-align: right;
 		    display: -ms-flexbox;
 		    display: flex;
