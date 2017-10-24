@@ -69,6 +69,21 @@ header{
 	height: 550px;
 }
 
+.shadow {
+		width: 95%;
+		height: 20%;
+	img {
+		width: 100%;
+		margin-top: -2%;
+		@media screen and (max-width:  $break-small) {
+			display: none;
+			   
+		}
+	}
+
+}
+
+
 .subnav__nav {
 	display: flex;
 
@@ -107,12 +122,14 @@ header{
 
 .maintravel__text {
 	color: white;
+	z-index: 2;
 
 	
 
 	.travel__big {
 		display: flex;
 		padding-bottom: 4%;
+		z-index: 2;
 
 		h1 {
 			text-transform: uppercase;
