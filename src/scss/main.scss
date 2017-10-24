@@ -1,5 +1,14 @@
 @import "reset";
 @import "diamond";
+@import "cards";
+@import "footer";
+
+
+
+
+$break-small: 740px;
+$break-large: 1200px;
+
 
 
 
@@ -9,11 +18,19 @@
 }
 
 @font-face {
+	font-family: "ziden-reg";
+	src: url("../../assets/fonts/AkzidenzGroteskBE-Regular.otf"),
+}
+
+@font-face {
 	font-family: "GearedSlab";
 	src: url("../../assets/fonts/GearedSlab.ttf"),
 }
 
-
+@font-face {
+	font-family: "ziden-light";
+	src: url("../../assets/fonts/AkzidenzGroteskBE-LightCn.otf"),
+}
 
 
 
@@ -28,11 +45,11 @@
 html, body {
 	width: 100%;
 	height: 100%;
-	background: grey;
+	background: black;
 }
 
 .header__bg {
-	position: relative;
+	// position: relative;
 	background-image: url(../../assets/img/snow__bg.JPG);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -56,6 +73,7 @@ html, body {
 .nabar__chart {
 	display: flex;
 	align-items: center;
+	display: none;
 }
 
 .nabvar__main__nav__shop_hover {
@@ -67,7 +85,47 @@ html, body {
 	background-repeat: no-repeat;
 	width: 100vh;
 	height: 40vh;
+	display: none;
 }
+
+///////////////////// Arrow Section ///////////////////////
+
+
+.grey__arrow {
+	width: 0;
+    height: 0;
+    z-index: 1;
+    border-top: 199px solid transparent;
+    border-bottom: 211px solid transparent;
+    border-right: 198px solid #6d6d6f;
+    float: right;
+    margin-top: -200px;
+    @media screen and (min-width:  $break-small) {
+			    display: none;
+	} 
+
+}
+
+.grey__right img {
+	display: none;
+	@media screen and (min-width:  $break-small) {
+			   display: inline;
+			   float: right;
+	} 
+
+}
+
+.grey__left {
+	display: none;
+
+    @media screen and (min-width:  $break-small) {
+			    display: inline;
+	} 
+
+}
+
+////////////////////// End of Arrow Section ///////////////////////
+
 
 /////////////////      SQUARE-SECTION     	/////////////////////////////////////////////////
 
@@ -76,7 +134,11 @@ html, body {
 	height: 0;
 	position: relative;
 	margin-left: 10%;
-	padding-top: 59%;
+	padding-top: 50%;
+
+	 @media screen and (min-width:  $break-small) {
+      display: none;
+    }
 
 }
 
@@ -94,15 +156,18 @@ html, body {
 	& h3{
 
 		&.shop {
-		font-size: 34px;
+		font-size: 150%;
 		transform: rotate(-45deg) translateY(100%);
 		}
 	}
 
 	& h2 {
-		font-size: 44px;
+		font-size: 210%;
 		transform: rotate(-45deg) translateY(100%);
 	}
+
+
+
 
 
 	
@@ -131,22 +196,139 @@ html, body {
 
 
 
-.members__part1 {
-	color: #c72026;
-	font-family: GearedSlab;
+.anniversary {
+	display: none;
 }
 
-.members__part2 h2 {
+.may {
+	display: none;
+}
+
+.members {
+	background-color: #ffffff;
+	clip-path: polygon(0 0, 50% 0, 77% 100%, 0% 100%);
+	height: 174px;
+
+		@media screen and (min-width:  $break-small) {
+			clip-path: polygon(0 0, 85% 0, 75% 100%, 0% 100%);
+		}
+
+
+}
+
+
+.members__part1 {
+	color: #c72026;
+	text-transform: uppercase;
+	font-size: 40px;
+	font-family: GearedSlab;
+	padding-top: 30px;
+	padding-left: 20px;
+
+}
+
+.members__part2 {
+	display: flex;
+	padding-left: 20px;
+
+	h2 {
 		color: #c72026;
-		font-size: 50px;
+		font-size: 65px;
 		font-family: GearedSlab;
 	}
 
+	 h4 {
+	 	font-size: 30px;
+	 	text-transform: uppercase;
+		font-family: ziden;
+	}
+
+	h5 {
+		text-align: center;
+	}
+}
+
+.members__part3 {
+	display: flex;
+	flex-direction: column;
+} 
+
+.shipping {
+	display:none;
+}
 
 
 
 
 
+.member__section {
+	background-image: url(../../assets/img/hikerr.png);
+	background-repeat: no-repeat;
+	height: 862px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 
+}
+
+.become__a__member {
+	text-transform: uppercase;
+	justify-content: flex-end;
+	align-self: flex-end;
+
+}
+
+.become__a__member h2 {
+	color: #c72026;
+	font-family: GearedSlab;
+	text-transform: uppercase;
+	font-size: 40px;
+}
+
+.become__a__member h4 {
+	width: 57.34375%;
+	color: #ffffff;
+	font-size: 20px;
+	font-family: ziden;
+}
+
+.member__hide{
+	display: none;
+}
+
+.subsale {
+	color: #ffffff;
+    padding: 28px;
+    z-index: 5;
+    font-size: 14px;
+    font-family: ziden-reg;
+    line-height: 21px;
+
+}
+
+.promotion {
+
+	color: #ffffff;
+	text-transform: uppercase;
+	font-family: GearedSlab;
+	font-size: 24.65pt;
+	text-align: center;
+
+	h2{
+		
+	}
+
+	h3 {
+		padding-left: 19%;
+	}
+
+	h4 {
+		padding-left: 19%;
+		font-family: ziden-light; 
+		font-size: 13px;
+		width: 93%;
+
+	}
+}
 
 

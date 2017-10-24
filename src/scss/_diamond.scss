@@ -2,6 +2,72 @@
 //   display: flex;
 // }
 
+@font-face {
+  font-family: "ziden";
+  src: url("../../assets/fonts/AkzidenzGroteskBE-MdCn.otf"),
+}
+
+$break-small: 740px;
+
+
+.squares2 {
+  width: 100%;
+  height: 0;
+  position: relative;
+  margin-left: 10%;
+  padding-top: 40%;
+ 
+
+}
+
+.square2 {
+  font-family: ziden;
+  text-transform: uppercase;
+  position: absolute;
+  width: 52.25%;
+  height: 0;
+  padding-bottom: 52.25%;
+  background: #ffffff;
+  // border: 5px solid #ecebed;
+
+
+
+
+  $distance: 106%;
+
+  &.square5 {
+    background-image: url(../../assets/img/shoe.png);
+    background-size: cover;
+    transform: rotate(45deg) translateX(-30%) translateY(6%);
+  }
+
+  &.square6 {
+    background-image: url(../../assets/img/vest.png);
+    background-size: cover;
+    transform: rotate(45deg) translateX(3%) translateY(-106%);
+  }
+
+  &.square7 {
+    background-image: url(../../assets/img/tent.png);
+    background-size: cover;
+    transform: rotate(45deg) translateX(82%) translateY(6%);
+  }
+
+  
+
+}
+
+
+
+
+
+.diamond__grid{
+  display: flex;
+
+}
+
+
+
 .row {
   padding-top: 20%;
   padding-bottom: 10%;
@@ -9,52 +75,53 @@
 }
 
 .diamond {
+  display: flex;
   position: relative;
-  width: 20%;
+  width: 28%;
   height: 0;
-  padding-bottom: 20%;
-  background: red;
+  padding-bottom: 15%;
+  background: rgba(131, 131, 132,0.5);
   margin-right: -100%;
   float: left;
   overflow: hidden;
-  transform: rotate(45deg);
 
-  & h4 {
-    transform: rotate(-45deg);
+  & p {
+    text-transform: uppercase;
+    color: white;
+    margin-top: 10%;
+    font-size: 150%;
+    text-align: center;
+    font-family: ziden;
+   
+
+      &.bottom__diamond {
+      transform: skew(-26deg);
+    }
+      &.top__diamond {
+      transform: skew(48deg);
+    }
   }
 }
 
-.diamond1,
 .diamond6 {
-  margin-top: -15%;
-  margin-left: 15%; 
+  transform: translateX(103%) translateY(-104%) skew(-48deg);
 }
 
-.diamond2,
+
 .diamond7 {
-  background: blue;
+  transform: translateX(87%) skew(26deg);
 }
 
-.diamond3,
+
 .diamond8 {
-  background: yellow;
-  margin-left: 30%; 
+  transform: translateX(-16%) skew(26deg);
 }
 
-.diamond4 {
-  background: purple;
-  margin-top: -15%;
-  margin-left: -15%; 
-}
 
 .diamond9 {
-  background: purple;
-  margin-left: 60%;  
+  transform: translateX(207%) translateY(-104%) skew(-48deg); 
 }
 
-.diamond5,
-.diamond10 {
-  background: purple;
-  margin-top: -15%;
-  margin-left: 45%; 
+.diamond10 { 
+  transform: translateY(-104%) skew(-48deg);
 }

@@ -1,0 +1,442 @@
+
+@import "reset";
+@import "cards";
+@import "footer";
+
+
+$break-small: 740px;
+
+
+
+
+
+
+@font-face {
+	font-family: "GearedSlab";
+	src: url("../../assets/fonts/GearedSlab.ttf"),
+}
+
+@font-face {
+	font-family: "ziden-x";
+	src: url("../../assets/fonts/AkzidenzGroteskBE-XBdCn.otf"),
+}
+
+@font-face {
+	font-family: "ziden-bold";
+	src: url("../../assets/fonts/AkzidenzGroteskBold.ttf"),
+}
+
+@font-face {
+	font-family: "ziden-cn";
+	src: url("../../assets/fonts/AkzidenzGroteskBE-Cn.otf"),
+
+}
+
+@font-face {
+	font-family: "ziden-reg";
+	src: url("../../assets/fonts/AkzidenzGroteskBE-Regular.otf"),
+}
+
+
+
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	background: black;
+}
+
+header{
+	// position: relative;
+	background-image: url(/assets/img/savannah.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 550px;
+}
+
+.subnav__nav {
+	display: flex;
+
+	li{
+		display: none;
+	}
+}
+
+.navbar {
+	display: flex;
+}
+
+.nabvar__main__nav,
+.navbar__search,
+.nabar__chart {
+	display: flex;
+	align-items: center;
+}
+
+.nabvar__main__nav__shop_hover {
+	display: none;
+}
+
+.rei__logo {
+	background-repeat: no-repeat;
+	width: 100vh;
+	height: 40vh;
+
+	@media screen and (max-width:  $break-small) {
+			   display: none;
+		}
+}
+
+
+
+
+.maintravel__text {
+	color: white;
+	
+
+	.travel__big {
+		display: flex;
+
+		h1 {
+			text-transform: uppercase
+		}
+
+		@media screen and (max-width:  $break-small) {
+			flex-direction: column;
+			text-align: center;
+		}
+	}
+
+
+	.maintravel__subtext {
+		text-align: center;
+		display: flex;
+
+		@media screen and (max-width:  $break-small) {
+			   display: flex;
+			   text-align: center;
+			   justify-content: space-around;
+		}
+
+		h4 {
+			text-transform: uppercase;
+			font-family: ziden-cn;
+		}
+
+		p {
+			font-size: 11px;
+			font-family: ziden-reg;
+		}
+
+	}
+
+	h3{
+			text-transform: uppercase;
+			font-family: ziden-x;
+
+			@media screen and (max-width:  $break-small) {
+			   display: none;
+			}
+
+		}
+}
+
+
+
+
+.maintravel__ankled__nav {
+	font-family: GearedSlab;
+
+	& a {
+		text-decoration: none;
+		
+	}
+
+	& li {
+		background-color: white;
+		color: black;
+		text-align: center;
+		
+
+		@media screen and (max-width:  $break-small) {
+			   margin-bottom: 5px;
+			   font-size: 20px;
+			   padding: 2px;
+		}
+	}
+
+	@media screen and (max-width:  $break-small) {
+			   
+		}
+
+}
+
+
+
+
+.awardwinningtrips {
+	display: flex;
+	height: 95px;
+	align-items: center;
+	color: black;
+	background-color: #e0ebf8;
+	// padding: 20px 40px;
+
+	@media screen and (max-width:  $break-small) {
+			   background-color: black;
+			   color: white;
+			   flex-direction: row-reverse;
+	} 
+
+	.awardwinningtrips__text{
+		width: 50%;
+		padding-left: 20px;
+
+		h2 {
+			font-size: 24px;
+		    font-family: ziden-cn;
+		    margin-bottom: 5px;
+		    @media screen and (max-width:  $break-small) {
+			   color: black;
+			   display: none;
+			} 
+		}
+
+		p {
+			font-size: 11px;
+			font-family: ziden-reg;
+			width: 80%;
+			@media screen and (max-width:  $break-small) {
+			   width: 90%;
+			   
+			}
+
+		}
+
+	}
+
+	.awardwinningtrips__video {
+		height: 72px;
+		width: 264px;
+		background-image: url(/assets/img/video-pic.png); 
+		background-position: center;
+  		background-size: cover;
+	}
+}
+
+
+
+.two__ankled__images{
+	display: flex;
+	width: 100%;
+	// height: 800px;
+	margin: 2%;
+
+	@media screen and (max-width:  $break-small) {
+  			flex-direction: column;
+	} 
+}
+
+
+
+.ankled__box1 {
+	width: 58%;
+	float: left;
+	height: 40vh;
+	// clip-path: polygon(0 0, 61% 0, 36% 100%, 0% 100%);
+	background-image: url(/assets/img/Layer11.png);
+  	background-size: contain;
+  	background-repeat: no-repeat;
+
+  		@media screen and (max-width:  $break-small) {
+  			background-image: url(/assets/img/hut.png);
+  			background-size: cover;
+		} 
+
+  	.ankled_box1__text {
+  		display: flex;
+  		flex-direction: column;
+  		align-items: flex-end;
+  		padding-top: 4%;
+
+  		h2 {
+  			background-color: white;
+  			height: 55px;
+  			font-size:30px;
+  			width: 94%;
+  			text-align: right;
+			clip-path: polygon(36% 0, 100% 0, 100% 100%, 26% 100%);
+  		}
+
+  		
+  	}
+
+  	.desktop__sec{
+  		display: flex;
+  		color: white;
+
+  		a {
+  			color: white;
+  			align-self: flex-end;
+  		}
+
+  		@media screen and (max-width:  $break-small) {
+  			flex-direction: column;
+		} 
+
+  	}
+
+  	@media screen and (max-width:  $break-small) {
+			   width: 100%;
+			   clip-path: none;
+			   float: none;
+	} 
+
+	// background-image: url(/assets/img/hut.png);
+}
+
+
+.ankled__box2 {
+	width: 58%;
+	margin-left: -20%;
+	height: 245px;
+	background-image: url(/assets/img/Layer12.png);
+	// clip-path: polygon(53% 0, 100% 0, 100% 100%, 27% 100%);
+	background-position: center;
+	background-repeat: no-repeat;
+  	background-size: contain;
+  	@media screen and (max-width:  $break-small) {
+			   width: 100%;
+			   // clip-path: none;
+			   background-size: cover;
+			   background-image:url(/assets/img/elephant.png);
+	}
+
+	// .ankled__image2 {
+	// 	clip-path: polygon(53% 0, 100% 0, 100% 100%, 27% 100%);
+	// 	float: right;
+	// 	position: absolute;
+
+	// 	@media screen and (max-width:  $break-small) {
+	// 		 display: none;
+	// 	}
+	// } 
+
+	.ankled_box2__text {
+  		display: flex;
+  		flex-direction: column;
+  		align-items: flex-start;
+  		padding-top: 4%;
+
+  		h2 {
+  			background-color: white;
+  			height: 51px;
+  			font-size:30px;
+  			width: 94%;
+  			text-align: left;
+  			clip-path: polygon(0 0, 72% 0, 64% 100%, 0 99%);
+			
+  		}
+
+  		@media screen and (max-width:  $break-small) {
+  			
+		} 
+  	}
+
+  	.desktop__sec2{
+  		display: flex;
+  		color: white;
+
+  		a {
+  			color: white;
+  			align-self: flex-start;
+  		}
+
+  		@media screen and (max-width:  $break-small) {
+  			flex-direction: column;
+		} 
+
+  	}
+
+
+
+}
+
+
+.four__rectangles {
+	display: flex;
+	flex-wrap: wrap;
+	@media screen and (max-width:  $break-small) {
+			   flex-direction: column;
+	} 
+
+}
+
+.ractangle {
+	width: 48.92473118%;
+	display: flex;
+	background: #ffffff;
+
+		.ractangle_image {
+			height: 97px;
+			width: 191px;
+
+			img{
+				height: 100%;
+				width: 100%;
+
+				
+			}
+		}
+
+		.rectangle__text {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			padding-left: 20px;
+
+			h4 {
+				padding-top: 10px;
+				font-family: ziden-bold;
+			}
+
+			p {
+				font-family: ziden-reg;
+				font-size: 12px;
+			}
+
+			.seedetails{
+				font-size: 10px;
+				align-self: flex-end;
+				justify-content: flex-end;
+				font-family: ziden-cn;
+				margin-right: 7px;
+				@media screen and (max-width:  $break-small) {
+				margin-right: 25px;
+			}
+
+
+			}
+		}
+	// height: 5.059989567%;
+	// align-content: space-between;
+
+	@media screen and (max-width:  $break-small) {
+		margin: 10px;
+		width: 100%;
+		height: 97px;
+	}
+}
+
+
+
+
+
+
+
+

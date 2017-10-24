@@ -1,0 +1,134 @@
+footer {
+	font-family: 'Berthold Akzidenz Grotesk Bold';
+	color: #252525;
+}
+
+.getintouch {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 35%;
+
+	@media screen and (min-width: 740px) {
+		display: flex;
+		flex-direction: row;
+		margin-left: 10%;
+	}
+}
+
+.impressum { 
+	display: none;
+
+	@media screen and (min-width: 740px) {
+		display: flex;
+		justify-content: space-between;
+		margin: 5% 10%;
+
+		& h3 {
+			font-size: .9rem;
+		}
+
+		& p {
+			font-size: .5rem;
+			line-height: .8rem;
+		}
+	}
+
+	.onlineaffiliateprogram {
+		margin: 10% 0%;
+	}
+}
+
+.footer__bkg {
+	background-image: url(../../assets/img/footer_mountains.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	padding-bottom: 100%;
+	background-size: cover;
+	z-index: -1;
+
+	@media screen and (min-width: 740px) {
+		padding-bottom: 90%;
+	}
+
+	@media screen and (min-width: 900px) {
+		padding-bottom: 80%;
+	}
+}
+
+.customerservice {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 10%;
+
+	& h2 {
+		font-size: 1.3rem;
+		padding-bottom: 2%;
+	}
+
+	& p {
+		font-size: .7rem;
+		font-weight: 100;
+	}
+
+	@media screen and (min-width: 740px) {
+		padding-bottom: 6%;
+		align-items: left;
+	}
+}
+
+.socialmedia {
+
+	& h2 {
+		font-size: 1.3rem;
+	}
+
+	@media screen and (min-width: 740px) {
+	    margin-right: 25%;
+
+	}
+}
+
+.socialmediaicons {
+	display: flex;
+	font-size: 2rem;
+
+	& i {
+		padding: 10% 5%;
+	}
+}
+
+.fa-facebook-official {
+	color: #274F9B;
+}
+
+.fa-youtube-square {
+	color: #C51914;
+}
+
+.fa-pinterest-square {
+	color: #B91E26;
+}
+
+.fa-twitter-square {
+	color: #29BCE2;
+}
+
+.copyright {
+	text-align: center;
+
+	font-size: .5rem;
+	max-width: 70%;
+	margin-left: 15%;
+
+	@media screen and (min-width: 740px) {
+		text-align: left; 
+		margin-left: 0%;
+	    margin-top: -6%;
+	    max-width: 35%;
+	    margin-left: 10%;
+	}
+}
